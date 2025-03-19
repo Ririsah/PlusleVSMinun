@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Cristik';
+    src: url("../assets/fonts/cristik/Cristik.otf") format('opentype'); /* Caminho correto da fonte */
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cristik';
+}
+
+body {
+    background: url("../assets/images/bg_body.gif") center / cover;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.container_1 {
+    margin-left: 50px;
+}
+
+.dice_result_display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/display_1.png") center / cover;
+    width: 150px;
+    height: 230px;
+    margin: 10px;
+}
+
+.dice_result_display > span {
+    font-size: 5rem;
+    color:  #e6d6ab;
+    text-shadow: rgb(0, 255, 255) -3px 3px 0,
+                rgb(255, 0, 0) 3px -3px 0;
+}
+
+
+.container_2,
+.container_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    width: 400px;
+    opacity: 40%;
+}
+
+.container_2 h2,
+.container_4 h2 {
+    font-size: 4.5rem;
+    color: #e6d6ab;
+    text-shadow: rgb(0, 255, 255) -3px 3px 0,
+                rgb(255, 0, 0) 3px -3px 0;
+    margin-top: 38px;
+}
+
+.container_2 p,
+.container_4 p {
+    font-family: "Pixelify Sans";
+    font-size: 1.5rem;
+    color: #2a0b30;
+}
+
+.container_2 .line_container,
+.container_4 .line_container {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 320px;
+    margin-top: 350px;
+}
+
+.container_2 .line_container {
+    margin-left: 20px;
+}
+
+.container_2_1,
+.container_4_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100px;
+    font-size: 3rem;
+    color: #e6d6ab;
+    text-shadow: rgb(0, 255, 255) -2px 2px 0,
+                rgb(255, 0, 0) 2px -2px 0;
+}
+
+.container_2_1 {
+    background: url("../assets/images/display_2.png") center / cover;
+}
+
+.container_2_2,
+.container_4_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
+    width: 450px;
+}
+
+
+.container_2_2 {
+    background: url("../assets/images/plusle_1.png") center / cover;
+}
+
+
+.container_2_2 span,
+.container_4_2 span {
+    font-size: 7rem;
+    color: #e6d6ab;
+    text-shadow: rgb(0, 255, 255) -3px 3px 0,
+                rgb(255, 0, 0) 3px -3px 0;
+    margin-top: 40px;
+}
+
+.active_player {
+    opacity: 100%;
+}
+
+.container_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 490px;
+}
+
+
+.container_3_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/display_2.png") center / cover;
+    height: 290px;
+    width: 450px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container_3_1 h1 {
+    font-size: 2.8rem;
+    color: #e6d6ab;
+    text-shadow: rgb(0, 255, 255) -2px 2px 0,
+                rgb(255, 0, 0) 2px -2px 0;
+}
+
+.container_3_2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100px;
+}
+
+.reset_btn {
+    background: url("../assets/images/reset_btn.png") center / cover;
+    height: 70px;
+    width: 210px;
+    border: none;
+}
+
+.container_3_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/dice_box.gif") center / cover;
+    height: 400px;
+    width: 550px;
+}
+
+.dice_image {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+.roll_btn,
+.hold_btn {
+    height: 70px;
+    width: 180px;
+    margin-top: 30px;
+    border: none;
+}
+
+.reset_btn:hover,
+.roll_btn:hover,
+.hold_btn:hover {
+    transform: scale(1.07);
+}
+
+.reset_btn:active,
+.roll_btn:active,
+.hold_btn:active {
+    transform: scale(1);
+}
+
+.roll_btn {
+    background: url("../assets/images/roll_btn.png") center / cover;
+
+}
+
+.hold_btn {
+    background: url("../assets/images/hold_btn.png") center / cover;    
+}
+
+.container_4_1 {
+    background: url("../assets/images/display_2.png") center / cover;
+}
+
+.container_4_2 {
+    background: url("../assets/images/minun_1.png") center / cover;
+}
+
+.container_5 {
+    margin-right: 50px;
+}
