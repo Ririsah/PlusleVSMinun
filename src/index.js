@@ -81,7 +81,7 @@ const resetDisplay = function(NodeList) {
 
 // muda as expressoes dos personagens
 const changeCharactersExpressions = function (className, img) {
-    document.querySelector(`.${className}`).style.background = `url("assets/images/${img}.png") center / cover`;
+    document.querySelector(`.${className}`).style.background = `url("src/assets/images/${img}.png") center / cover`;
 }
 
 // muda as falas dos personagens
@@ -122,7 +122,7 @@ document.querySelector('.roll_btn').addEventListener('click', function () {
         diceResultDisplay.forEach(element => {
             element.textContent = diceValue;
         });
-        diceImageDisplay.src = `./assets/images/d_${diceValue}.png`
+        diceImageDisplay.src = `src/assets/images/d_${diceValue}.png`
         
         // caso o resultado do dado seja igual a 1
         if (diceValue === 1) {
@@ -182,7 +182,7 @@ document.querySelector('.hold_btn').addEventListener('click', function () {
         }
 
         // caso a soma de pontos seja maior ou igual a 50 o jogo termina
-        if (totalScore >= 10) {
+        if (totalScore >= 50) {
             gameTheme.pause();
             finish.play();
             isplaying = false;
